@@ -1,0 +1,57 @@
+.chatScreen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  &__header {
+    flex-shrink: 0;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+  }
+
+  &__title {
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  &__messages {
+    position: relative;
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    background: var(--chat-background);
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url('https://web.max.ru/_app/immutable/assets/pattern_space.aFb4MW9l.svg');
+      background-repeat: repeat;
+      background-size: 280px 280px;
+      opacity: 0.15;
+      pointer-events: none;
+    }
+  }
+
+  &__composer {
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+    display: flex;
+    gap: 10px;
+    padding: 14px 20px;
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+  }
+
+  &__input {
+    flex: 1;
+  }
+}

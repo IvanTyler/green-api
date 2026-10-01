@@ -1,0 +1,55 @@
+.loginScreen {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--chat-background);
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('https://web.max.ru/_app/immutable/assets/pattern_space.aFb4MW9l.svg');
+    background-repeat: repeat;
+    background-size: 280px 280px;
+    opacity: 0.15;
+    pointer-events: none;
+  }
+
+  &__card {
+    position: relative;
+    z-index: 1;
+    width: clamp(280px, 30vw, 380px);
+    background: var(--surface);
+    border-radius: var(--radius-l);
+    padding: clamp(24px, 3vw, 36px);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    box-shadow: 0 20px 60px rgba(13, 0, 26, 0.25);
+  }
+
+  &__title {
+    margin: 0;
+    font-size: clamp(18px, 2vw, 22px);
+    color: var(--text);
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  &__error {
+    margin: 0;
+    padding: 8px 10px;
+    border-radius: var(--radius-m);
+    background: #fdecec;
+    color: #e5484d;
+    font-size: 12.5px;
+    line-height: 1.4;
+  }
+}

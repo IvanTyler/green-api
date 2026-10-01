@@ -1,0 +1,30 @@
+:root {
+  /* Фирменные цвета MAX (go.max.ru/brandbook) */
+  --blue-giant: #471aff;
+  --purple-nebula: #9500ff;
+  --violet-pulsar: #6e1aff;
+  --cyan-comet: #00bfff;
+  --white-light: #ffffff;
+  --dark-matter: #0d001a;
+
+  --brand-gradient: linear-gradient(135deg, var(--blue-giant), var(--purple-nebula));
+
+  --bg: #f4f2fb;
+  --surface: #ffffff;
+  --border: #e4e0f2;
+  --text: var(--dark-matter);
+  --text-muted: #837f94;
+
+  --bubble-in: #ffffff;
+  --bubble-out: #efe7ff;
+
+  --radius-m: 12px;
+  --radius-l: 16px;
+}
+
+/* Фон окна переписки — реальные цвета градиента с web.max.ru (сняты через getComputedStyle) */
+:root {
+  --chat-bg-step-1: #99d5d7;
+  --chat-bg-step-2: #80bcff;
+  --chat-background: linear-gradient(28deg, var(--chat-bg-step-1) 8.03%, var(--chat-bg-step-2) 91.51%);
+}

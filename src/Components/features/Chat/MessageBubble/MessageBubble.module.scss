@@ -1,0 +1,27 @@
+.messageBubble {
+  position: relative;
+  z-index: 1;
+  max-width: 70%;
+  padding: 8px 12px;
+  border-radius: var(--radius-m);
+  font-size: 14px;
+  line-height: 1.4;
+  box-shadow: 0 1px 1px rgba(13, 0, 26, 0.06);
+
+  &_in {
+    align-self: flex-start;
+    background: var(--bubble-in);
+    border-bottom-left-radius: 4px;
+  }
+
+  &_out {
+    align-self: flex-end;
+    background: var(--bubble-out);
+    border-bottom-right-radius: 4px;
+  }
+
+  &__text {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+}
